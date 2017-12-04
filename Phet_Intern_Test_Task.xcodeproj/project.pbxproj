@@ -12,6 +12,9 @@
 		2073A0491FD4FBDB00DAA557 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2073A0471FD4FBDB00DAA557 /* Main.storyboard */; };
 		2073A04B1FD4FBDB00DAA557 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2073A04A1FD4FBDB00DAA557 /* Assets.xcassets */; };
 		2073A04E1FD4FBDB00DAA557 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2073A04C1FD4FBDB00DAA557 /* LaunchScreen.storyboard */; };
+		2073A0561FD4FD2200DAA557 /* PhetLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2073A0551FD4FD2200DAA557 /* PhetLogo.png */; };
+		2073A0581FD4FF4B00DAA557 /* PhetLogoBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 2073A0571FD4FF4B00DAA557 /* PhetLogoBlack.png */; };
+		2073A05A1FD500F600DAA557 /* SimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2073A0591FD500F600DAA557 /* SimulationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		2073A04A1FD4FBDB00DAA557 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2073A04D1FD4FBDB00DAA557 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2073A04F1FD4FBDB00DAA557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2073A0551FD4FD2200DAA557 /* PhetLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PhetLogo.png; sourceTree = "<group>"; };
+		2073A0571FD4FF4B00DAA557 /* PhetLogoBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PhetLogoBlack.png; sourceTree = "<group>"; };
+		2073A0591FD500F600DAA557 /* SimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,12 @@
 				2073A0431FD4FBDB00DAA557 /* AppDelegate.swift */,
 				2073A0451FD4FBDB00DAA557 /* ViewController.swift */,
 				2073A0471FD4FBDB00DAA557 /* Main.storyboard */,
+				2073A0591FD500F600DAA557 /* SimulationViewController.swift */,
 				2073A04A1FD4FBDB00DAA557 /* Assets.xcassets */,
 				2073A04C1FD4FBDB00DAA557 /* LaunchScreen.storyboard */,
 				2073A04F1FD4FBDB00DAA557 /* Info.plist */,
+				2073A0551FD4FD2200DAA557 /* PhetLogo.png */,
+				2073A0571FD4FF4B00DAA557 /* PhetLogoBlack.png */,
 			);
 			path = Phet_Intern_Test_Task;
 			sourceTree = "<group>";
@@ -124,6 +133,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2073A04E1FD4FBDB00DAA557 /* LaunchScreen.storyboard in Resources */,
+				2073A0581FD4FF4B00DAA557 /* PhetLogoBlack.png in Resources */,
+				2073A0561FD4FD2200DAA557 /* PhetLogo.png in Resources */,
 				2073A04B1FD4FBDB00DAA557 /* Assets.xcassets in Resources */,
 				2073A0491FD4FBDB00DAA557 /* Main.storyboard in Resources */,
 			);
@@ -136,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2073A05A1FD500F600DAA557 /* SimulationViewController.swift in Sources */,
 				2073A0461FD4FBDB00DAA557 /* ViewController.swift in Sources */,
 				2073A0441FD4FBDB00DAA557 /* AppDelegate.swift in Sources */,
 			);
@@ -275,6 +287,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VGQUV34U44;
 				INFOPLIST_FILE = Phet_Intern_Test_Task/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "TrNeate.Phet-Intern-Test-Task";
@@ -289,6 +302,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VGQUV34U44;
 				INFOPLIST_FILE = Phet_Intern_Test_Task/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "TrNeate.Phet-Intern-Test-Task";
