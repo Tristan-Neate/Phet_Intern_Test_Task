@@ -10,97 +10,117 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--HomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Phet_Intern_Test_Task" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeVC" customModule="Phet_Intern_Test_Task" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Circuit Construction Kit: DC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9K-4V-Y7k">
-                                <rect key="frame" x="45" y="40" width="285.5" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PhetLogoBlack.png" translatesAutoresizingMaskIntoConstraints="NO" id="6jA-oq-Anp">
-                                <rect key="frame" x="191" y="584" width="184" height="83"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PhetLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="U6a-uq-qMU">
+                                <rect key="frame" x="88" y="50" width="198" height="97"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGu-Vw-LZk">
-                                <rect key="frame" x="91" y="318" width="192" height="30"/>
+                                <rect key="frame" x="88" y="313" width="192" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Launch Simulation">
+                                <state key="normal" title="Simulation Select">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="HdN-6a-9AT" kind="show" id="gbG-Te-aMb"/>
+                                    <segue destination="J6X-o1-LoY" kind="show" id="NZ8-Kj-eDY"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.16667962074279785" green="0.19730326533317566" blue="0.4146590530872345" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6jA-oq-Anp" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9FA-Jv-dpy"/>
-                            <constraint firstItem="6jA-oq-Anp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aau-aX-yhM"/>
-                            <constraint firstItem="i9K-4V-Y7k" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="40" id="jf8-hz-DHG"/>
-                            <constraint firstItem="i9K-4V-Y7k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yID-zL-fJH"/>
+                            <constraint firstItem="U6a-uq-qMU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="9DE-BG-neh"/>
+                            <constraint firstItem="U6a-uq-qMU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="YKh-HJ-cGL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="102" y="134"/>
         </scene>
-        <!--Simulation View Controller-->
+        <!--ListVC-->
+        <scene sceneID="OIw-mU-hXf">
+            <objects>
+                <tableViewController id="E3j-6P-5t7" customClass="ListVC" customModule="Phet_Intern_Test_Task" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BEx-no-Lhx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="E3j-6P-5t7" id="msP-JH-ziL"/>
+                            <outlet property="delegate" destination="E3j-6P-5t7" id="klM-X8-zJx"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="w02-NU-asw"/>
+                    <connections>
+                        <segue destination="HdN-6a-9AT" kind="show" identifier="ListToSimulation" id="YLl-Vw-pAx"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k1B-BM-LK0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1766" y="133"/>
+        </scene>
+        <!--SimulationVC-->
         <scene sceneID="6Ql-nJ-KQK">
             <objects>
-                <viewController id="HdN-6a-9AT" customClass="SimulationViewController" customModule="Phet_Intern_Test_Task" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HdN-6a-9AT" customClass="SimulationVC" customModule="Phet_Intern_Test_Task" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Txs-iM-1AD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XBr-K7-S9z">
-                                <rect key="frame" x="0.0" y="48" width="375" height="619"/>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XBr-K7-S9z">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNJ-b1-YYe">
-                                <rect key="frame" x="10" y="10" width="50" height="40"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="YFk-Lo-lPz"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="SNJ-b1-YYe" firstAttribute="top" secondItem="Txs-iM-1AD" secondAttribute="top" constant="10" id="61M-eG-0Jf"/>
                             <constraint firstItem="XBr-K7-S9z" firstAttribute="leading" secondItem="ZrN-4s-QIX" secondAttribute="leading" id="JuS-71-oj1"/>
-                            <constraint firstItem="SNJ-b1-YYe" firstAttribute="leading" secondItem="ZrN-4s-QIX" secondAttribute="leading" constant="10" id="Jxl-Uo-Z9S"/>
+                            <constraint firstItem="XBr-K7-S9z" firstAttribute="top" secondItem="ZrN-4s-QIX" secondAttribute="top" id="TZj-CS-F5Q"/>
                             <constraint firstItem="ZrN-4s-QIX" firstAttribute="bottom" secondItem="XBr-K7-S9z" secondAttribute="bottom" id="XBu-bS-iZ7"/>
-                            <constraint firstItem="XBr-K7-S9z" firstAttribute="top" secondItem="SNJ-b1-YYe" secondAttribute="bottom" constant="10" id="Zah-x7-kvP"/>
                             <constraint firstItem="ZrN-4s-QIX" firstAttribute="trailing" secondItem="XBr-K7-S9z" secondAttribute="trailing" id="gw9-O9-9vT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZrN-4s-QIX"/>
                     </view>
                     <connections>
-                        <outlet property="webView" destination="XBr-K7-S9z" id="8aD-xc-fbK"/>
+                        <outlet property="webView" destination="XBr-K7-S9z" id="0O8-j8-0Ox"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nIX-Ha-VSc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="944.79999999999995" y="133.5832083958021"/>
+            <point key="canvasLocation" x="2532" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="T3s-8b-KR5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J6X-o1-LoY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wjF-yR-DvQ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="E3j-6P-5t7" kind="relationship" relationship="rootViewController" id="KPY-yh-jw2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oQC-Le-s7Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="921.60000000000002" y="133.13343328335833"/>
         </scene>
     </scenes>
     <resources>
-        <image name="PhetLogoBlack.png" width="184" height="83"/>
+        <image name="PhetLogo.png" width="198" height="97"/>
     </resources>
 </document>

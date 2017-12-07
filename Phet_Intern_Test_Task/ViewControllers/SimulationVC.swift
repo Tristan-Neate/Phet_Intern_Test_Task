@@ -9,17 +9,21 @@
 import UIKit
 import WebKit
 
-class SimulationViewController: UIViewController {
+class SimulationVC: UIViewController {
 
     @IBOutlet weak var webView: WKWebView!//web wrapper
+    
+
     let progressView = UIProgressView(progressViewStyle: .default)//provide loading bar for webpage
    
+    var simulationInfo: (title:String, url:String)!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = simulationInfo.title
         
         //load the provide simulation
-        let url = URL(string: "https://phet.colorado.edu/sims/html/circuit-construction-kit-dc/latest/circuit-construction-kit-dc_en.html")!
+        let url = URL(string: simulationInfo.url)!
         let req = URLRequest(url: url)
         webView!.load(req)
         

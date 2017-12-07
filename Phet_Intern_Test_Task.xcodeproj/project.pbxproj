@@ -8,26 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		2073A0441FD4FBDB00DAA557 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2073A0431FD4FBDB00DAA557 /* AppDelegate.swift */; };
-		2073A0461FD4FBDB00DAA557 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2073A0451FD4FBDB00DAA557 /* ViewController.swift */; };
+		2073A0461FD4FBDB00DAA557 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2073A0451FD4FBDB00DAA557 /* HomeVC.swift */; };
 		2073A0491FD4FBDB00DAA557 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2073A0471FD4FBDB00DAA557 /* Main.storyboard */; };
 		2073A04B1FD4FBDB00DAA557 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2073A04A1FD4FBDB00DAA557 /* Assets.xcassets */; };
 		2073A04E1FD4FBDB00DAA557 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2073A04C1FD4FBDB00DAA557 /* LaunchScreen.storyboard */; };
 		2073A0561FD4FD2200DAA557 /* PhetLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2073A0551FD4FD2200DAA557 /* PhetLogo.png */; };
-		2073A0581FD4FF4B00DAA557 /* PhetLogoBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 2073A0571FD4FF4B00DAA557 /* PhetLogoBlack.png */; };
-		2073A05A1FD500F600DAA557 /* SimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2073A0591FD500F600DAA557 /* SimulationViewController.swift */; };
+		2073A05A1FD500F600DAA557 /* SimulationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2073A0591FD500F600DAA557 /* SimulationVC.swift */; };
+		20F3C3E71FD8EFCB00153F8D /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F3C3E61FD8EFCB00153F8D /* ListVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2073A0401FD4FBDB00DAA557 /* Phet_Intern_Test_Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phet_Intern_Test_Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2073A0431FD4FBDB00DAA557 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2073A0451FD4FBDB00DAA557 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2073A0451FD4FBDB00DAA557 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		2073A0481FD4FBDB00DAA557 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2073A04A1FD4FBDB00DAA557 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2073A04D1FD4FBDB00DAA557 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2073A04F1FD4FBDB00DAA557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2073A0551FD4FD2200DAA557 /* PhetLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PhetLogo.png; sourceTree = "<group>"; };
-		2073A0571FD4FF4B00DAA557 /* PhetLogoBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PhetLogoBlack.png; sourceTree = "<group>"; };
-		2073A0591FD500F600DAA557 /* SimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewController.swift; sourceTree = "<group>"; };
+		2073A0591FD500F600DAA557 /* SimulationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationVC.swift; sourceTree = "<group>"; };
+		20F3C3E61FD8EFCB00153F8D /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,16 +61,32 @@
 			isa = PBXGroup;
 			children = (
 				2073A0431FD4FBDB00DAA557 /* AppDelegate.swift */,
-				2073A0451FD4FBDB00DAA557 /* ViewController.swift */,
+				20F3C3E51FD8ED4400153F8D /* ViewControllers */,
 				2073A0471FD4FBDB00DAA557 /* Main.storyboard */,
-				2073A0591FD500F600DAA557 /* SimulationViewController.swift */,
 				2073A04A1FD4FBDB00DAA557 /* Assets.xcassets */,
 				2073A04C1FD4FBDB00DAA557 /* LaunchScreen.storyboard */,
 				2073A04F1FD4FBDB00DAA557 /* Info.plist */,
-				2073A0551FD4FD2200DAA557 /* PhetLogo.png */,
-				2073A0571FD4FF4B00DAA557 /* PhetLogoBlack.png */,
+				20F3C3E41FD8ED3700153F8D /* Images */,
 			);
 			path = Phet_Intern_Test_Task;
+			sourceTree = "<group>";
+		};
+		20F3C3E41FD8ED3700153F8D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2073A0551FD4FD2200DAA557 /* PhetLogo.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		20F3C3E51FD8ED4400153F8D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2073A0451FD4FBDB00DAA557 /* HomeVC.swift */,
+				20F3C3E61FD8EFCB00153F8D /* ListVC.swift */,
+				2073A0591FD500F600DAA557 /* SimulationVC.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,7 +149,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2073A04E1FD4FBDB00DAA557 /* LaunchScreen.storyboard in Resources */,
-				2073A0581FD4FF4B00DAA557 /* PhetLogoBlack.png in Resources */,
 				2073A0561FD4FD2200DAA557 /* PhetLogo.png in Resources */,
 				2073A04B1FD4FBDB00DAA557 /* Assets.xcassets in Resources */,
 				2073A0491FD4FBDB00DAA557 /* Main.storyboard in Resources */,
@@ -147,8 +162,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2073A05A1FD500F600DAA557 /* SimulationViewController.swift in Sources */,
-				2073A0461FD4FBDB00DAA557 /* ViewController.swift in Sources */,
+				20F3C3E71FD8EFCB00153F8D /* ListVC.swift in Sources */,
+				2073A05A1FD500F600DAA557 /* SimulationVC.swift in Sources */,
+				2073A0461FD4FBDB00DAA557 /* HomeVC.swift in Sources */,
 				2073A0441FD4FBDB00DAA557 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
